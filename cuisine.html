@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to Kazakh Culture</title>
+    <link rel="stylesheet" href="styles2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <body>
+    <section class="sub-header">
+      <nav>
+        <a href="intro.html"><img src="./images/logo kz.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="./intro.html">HOME</a></li>
+            <li><a href="./cuisine.html">CUISUINE</a></li>
+            <li><a href="./arts.html">ARTS & CRAFTS</a></li>
+            <li><a href="./music.html">MUSIC</a></li>
+            <li><a href="./contact2.html">CONTACTS</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Welcome to Kazakh cuisine!</h1>
+    </section>
+
+
+   <section class="course">
+    <h1>Kazakh Dishes</h1>
+    <p>It's a rich blend of flavors, heavily influenced by the use of meat, particularly from livestock like horses, sheep, and cattle. Dairy products, grains, and hearty vegetables also play significant roles in Kazakh dishes.
+    </p>
+    <div class="row">
+
+      <div class="course-col">
+        <h3>Beshbarmak</h3>
+        <p>Beshbarmak, which means "five fingers" in Kazakh, is a revered dish symbolizing hospitality and togetherness. It traditionally consists of boiled meat (usually lamb or horse meat) served on a bed of flat noodles, topped with onion sauce.
+        </p>
+        <div class="recipeButton">
+          <button class="hero-btn red-btn" onclick="toggleRecipe('beshbarmakRecipe')">Beshbarmak Recipe</button>
+          <div id="beshbarmakRecipe" class="recipePopup">
+            <h2>Beshbarmak Recipe</h2>
+            <img id="beshbarmakImage" src="./images/beshbarmak.jpeg" alt="Beshbarmak Image" onload="adjustPopupWidth('beshbarmakRecipe', 'beshbarmakImage')">
+            <p>Ingredients:<br>
+              500g wide flat noodles<br>
+              1 kg lamb or beef<br>
+              3-4 onions<br>
+              Water<br>
+              Instructions:<br>
+              Boil the Meat: In a large pot, cook the meat with water, salt (around 2 hours).
+              Prepare Noodles: Cook noodles separately in salted boiling water according to package instructions.
+              Caramelize Onions: Slice onions thinly and cook in vegetable oil until golden brown and caramelized.</p>
+            <button class="hero-btn red-btn" onclick="toggleRecipe('beshbarmakRecipe')">Close</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-col">
+        <h3>Plov</h3>
+        <p>Plov is a fragrant rice dish cooked with meat (often lamb or beef), vegetables, and aromatic spices. It's a staple in Kazakh cuisine and signifies generosity and celebration, often served during special occasions.
+        </p>
+        <div class="recipeButton">
+          <button class="hero-btn red-btn" onclick="toggleRecipe('plovRecipe')">Plov Recipe</button>
+          <div id="plovRecipe" class="recipePopup">
+            <h2>Plov Recipe</h2>
+            <img id="plovImage" src="./images/plov.jpeg" alt="Plov Image" onload="adjustPopupWidth('plovRecipe', 'plovImage')">
+            <p>Ingredients:<br>
+              2 cups long-grain rice<br>
+              500g cubed lamb or beef<br>
+              2 onions, sliced<br>
+              3 carrots, julienned<br>
+              4 cups broth<br>
+              Instructions:<br>
+              Brown meat, set aside.
+              Sauté onions, add carrots.
+              Toast spices, return meat, add garlic.
+              Add rice, broth, salt. Simmer covered for 20-25 mins.
+              Optionally add raisins, dried apricots, or chickpeas.
+              Fluff before serving hot. Adjust spices to taste. Enjoy!</p>
+            <button class="hero-btn red-btn" onclick="toggleRecipe('plovRecipe')">Close</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-col">
+        <h3>Kurt (Dried Yogurt)</h3>
+        <p>Kurt is a traditional dried dairy product made from fermented milk. It's shaped into small balls and dried, resulting in a unique and tangy flavor. Kurt serves as a portable and nutritious snack, reflecting the nomadic heritage of the Kazakh people.
+        </p>
+        <div class="recipeButton">
+          <button class="hero-btn red-btn" onclick="toggleRecipe('kurtRecipe')">Kurt Recipe</button>
+          <div id="kurtRecipe" class="recipePopup">
+            <h2>Kurt Recipe</h2>
+            <img id="kurtImage" src="./images/kurt.jpeg" alt="Kurt Image" onload="adjustPopupWidth('kurtRecipe', 'kurtImage')">
+            <p>Ingredients:<br>
+              Yogurt (preferably full-fat)<br>
+              Instructions:<br>              
+              Take yogurt and strain it through a cheesecloth or muslin cloth to remove excess moisture.
+              Shape the strained yogurt into small balls or cylinders.
+              Place these shapes in a dry, well-ventilated area or in a dehydrator.
+              Allow them to dry completely. This process can take a few days to a week, depending on the climate and humidity.
+              Once completely dried, kurt becomes a tangy, chewy snack. Store it in an airtight container.
+              </p>
+            <button class="hero-btn red-btn" onclick="toggleRecipe('kurtRecipe')">Close</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script src="script2.js"></script>
+  </section>
+
+
+  <!----- facitlities------->
+
+  <section class="facilities">
+    <div class="salad-bowl">
+      <img src="./images/lettuce.png" alt="Lettuce" class="lettuce">
+      <img src="./images/tomato.webp" alt="Tomato" class="tomato">
+      <img src="./images/cucumber.png" alt="Cucumber" class="cucumber">
+      <img src="./images/onion.png" alt="Onion" class="onion">
+    </div>
+    <button class="hero-btn red-btn" onclick="prepareSalad()">Salad ingredients</button><br><br>
+    
+
+
+
+    <h1>Kazakh Drinks</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    <div class="row">
+      <div class="facilities-col">
+        <img src="./images/kymyz.jpeg" alt="">
+        <h3>Kymyz (Fermented Mare's Milk)</h3>
+        <p>Revered as a symbol of health and vitality, Kymyz is believed to have various health benefits, rich in vitamins, enzymes, and probiotics. It's considered a cultural heritage and a part of Kazakh identity, often served to guests as a gesture of hospitality.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="./images/shubat2.jpeg" alt="">
+        <h3>Shubat (Fermented Camel's Milk)</h3>
+        <p>another fermented dairy product prevalent among Kazakh and Central Asian nomadic cultures. It's made by fermenting camel's milk and has been a dietary staple for centuries, especially among nomadic tribes.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="./images/kozhe.jpeg" alt="">
+        <h3>Kozhe (Fermented Cereal Drink)</h3>
+        <p>traditional Kazakh fermented beverage made from cereals like wheat, barley, or millet. It's prepared by fermenting boiled grains with yeast and sugar.</p>
+      </div>
+    </div>
+  </section>
+
+<!--end facilities-->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>At Kazakh Heritage Hub, we're devoted to unraveling the rich tapestry of Kazakh culture and history. <br>
+        Our platform serves as a digital sanctuary, where the vibrant heritage of Kazakhstan comes
+        alive through engaging narratives, immersive experiences, and authentic insights.</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>Made With <i class="fa-solid fa-heart"></i> Amina</p>
+    </section>
+
+    <script src="script2.js"></script>
+  </body>
+</html>

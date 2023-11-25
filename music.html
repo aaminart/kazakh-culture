@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website</title>
+    <link rel="stylesheet" href="styles2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <body>
+    <section class="sub-header">
+      <nav>
+        <a href="intro.html"><img src="./images/logo kz.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="./intro.html">HOME</a></li>
+            <li><a href="./cuisine.html">CUISUINE</a></li>
+            <li><a href="./arts.html">ARTS & CRAFTS</a></li>
+            <li><a href="./music.html">MUSIC</a></li>
+            <li><a href="./contact2.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Welcome to Kazakh music</h1>
+    </section><br>
+
+    <!-- about us content -->
+
+    <section class="about-us">
+      <div class="music-container">
+        <h1 class="mt-4 mb-4 text-center">Music and Dance in Kazakh Culture</h1>
+        <div class="row">
+          <div class="col-md-6"><br>
+            <h3 class="mb-3">Traditional Kazakh Music Instruments</h3>
+            <p>Explore the significance of instruments like the <strong>Dombra</strong>, an iconic string instrument central to Kazakh music.</p>
+            <img src="./images/dombra.JPG" id="dombra" alt="dombra" class="img-fluid mb-3" width="400" height="400">
+            <p>Click below to learn more about the Dombra:</p>
+            <button id="dombraButton" class="hero-btn red-btn">Learn More about Dombra</button>
+            <div id="dombraInfo" style="display: none;">
+              <p>The Dombra is a two-stringed musical instrument used in Kazakh traditional music.</p>
+              <p>It has a deep cultural significance and is often associated with Kazakh identity.</p>
+            </div><br><br>
+          </div>
+
+
+          <div class="col-md-6"><>
+            <h3 class="mb-3">Kazakh Traditional Dances</h3>
+            <p>Discover the vibrant Kazakh folk dances, such as <strong>Kara Zhorga</strong>, performed during festive occasions.</p>
+            <p>Hover over to know more about Kara Zhorga:</p>
+            <img src="./images/karajorga.jpeg" id="karaZhorga" alt="Kara Zhorga Dance" class="img-fluid mb-3" width="500" height="400">
+            <div id="karaZhorgaInfo" style="display: none;">
+              <p>Kara Zhorga is a lively traditional Kazakh dance often performed in circular formations.</p>
+              <p>It reflects the energy, unity, and cultural pride of the Kazakh people.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-md-12">
+            <h2>Kazakh Kui</h2><br>
+            <h4>Aday - Kurmangazy</h4><br>
+            <audio controls>
+              <source src="./aday.mp3" type="audio/mpeg">Your browser does not support the audio element.
+            </audio>
+            <br><br>
+            
+            <h4>Balbyrauyn - Kurmangazy</h4><br>
+            <audio controls>
+              <source src="balbyrauyn.mp3" type="audio/mpeg">Your browser does not support the audio element.
+            </audio>
+            <br>
+          </div>
+
+          <div class="col-md-12 text-center">
+            <h3 class="mb-3">Explore Kazakh Music & Dance</h3>
+
+            <video id="videoPlayer" width="500" height="360" controls>
+              <source src="./karajorgaa.MP4" type="video/mp4" >
+              Your browser does not support the video tag.
+            </video>
+        
+            <p><strong>Press space key to play audio samples or watch videos showcasing Kazakh music and dances.</strong><br>
+            Feel the rhythm and melodies of Kazakh culture!</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Click event listener for Dombra button
+    document.getElementById("dombraButton").addEventListener("click", function() {
+      let dombraInfo = document.getElementById("dombraInfo");
+      dombraInfo.style.display = dombraInfo.style.display === "none" ? "block" : "none";
+    });
+
+    // Mouseover event listener for Kara Zhorga image
+    document.getElementById("karaZhorga").addEventListener("mouseover", function() {
+      let karaZhorgaInfo = document.getElementById("karaZhorgaInfo");
+      karaZhorgaInfo.style.display = "block";
+    });
+
+    // Mouseout event listener to hide Kara Zhorga info
+    document.getElementById("karaZhorga").addEventListener("mouseout", function() {
+      let karaZhorgaInfo = document.getElementById("karaZhorgaInfo");
+      karaZhorgaInfo.style.display = "none";
+    });
+
+    document.addEventListener("keydown", function(event) {
+  const video = document.getElementById("videoPlayer");
+  if (event.code === "Space") { // For spacebar key
+    if (video.paused) {
+      video.play(); // Play the video if it's paused
+    } else {
+      video.pause(); // Pause the video if it's playing
+    }
+  }
+});
+
+
+  </script>
+    
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>At Kazakh Heritage Hub, we're devoted to unraveling the rich tapestry of Kazakh culture and history. <br>
+        Our platform serves as a digital sanctuary, where the vibrant heritage of Kazakhstan comes
+        alive through engaging narratives, immersive experiences, and authentic insights.</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>Made With <i class="fa-solid fa-heart"></i> by Amina</p>
+    </section>
+
+    <script src="script2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kazakh Heritage Hub</title>
+    <link rel="stylesheet" href="styles2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <body>
+    <section class="sub-header">
+      <nav>
+        <a href="intro.html"><img src="./images/logo kz.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="./intro.html">HOME</a></li>
+            <li><a href="./cuisine.html">CUISUINE</a></li>
+            <li><a href="./arts.html">ARTS & CRAFTS</a></li>
+            <li><a href="./music.html">MUSIC</a></li>
+            <li><a href="./contact2.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+  
+    <section class="quiz-container">
+        <h2>Kazakh Culture Quiz</h2>
+        <br>
+        <form id="quiz-form">
+          <ol>
+            <li>
+              <h5>What is the traditional Kazakh meat and noodle dish called?</h5>
+              <input type="radio" name="question1" value="A"> Beshbarmak<br>
+              <input type="radio" name="question1" value="B"> Plov<br>
+              <input type="radio" name="question1" value="C"> Manty<br>
+            </li><br>
+            <li>
+              <h5>Which nomadic group historically played a significant role in shaping Kazakh culture?</h5>
+              <input type="radio" name="question2" value="A"> Mongols<br>
+              <input type="radio" name="question2" value="B"> Huns<br>
+              <input type="radio" name="question2" value="C">  Scythians<br>
+            </li><br>
+            <li>
+              <h5>What language is predominantly spoken in Kazakhstan?</h5>
+              <input type="radio" name="question3" value="A"> Kazakh<br>
+              <input type="radio" name="question3" value="B"> Russian<br>
+              <input type="radio" name="question3" value="C"> Turkish<br>
+            </li><br>
+            <li>
+              <h5>What is the name of the felt home used by nomadic Kazakhs?</h5>
+              <input type="radio" name="question4" value="A"> Yurt<br>
+              <input type="radio" name="question4" value="B"> Igloo<br>
+              <input type="radio" name="question4" value="C"> Tepee<br>
+            </li><br>
+            <li>
+              <h5>What is the name of the traditional Kazakh embroidery art?</h5>
+              <input type="radio" name="question5" value="A"> Suzani<br>
+              <input type="radio" name="question5" value="B"> Ikat<br>
+              <input type="radio" name="question5" value="C"> Shyrdak<br>
+            </li><br>
+            <li>
+              <h5>What is the largest lake in Kazakhstan?</h5>
+              <input type="radio" name="question6" value="A"> Lake Balkhash<br>
+              <input type="radio" name="question6" value="B"> Caspian Sea<br>
+              <input type="radio" name="question6" value="C"> Lake Zaysan<br>
+            </li><br>
+            <li>
+              <h5>What is the name of the two-stringed instrument central to Kazakh music?</h5>
+              <input type="radio" name="question7" value="A"> Dombra<br>
+              <input type="radio" name="question7" value="B"> Saz<br>
+              <input type="radio" name="question7" value="C"> Balalaika<br>
+            </li><br>
+            <li>
+              <h5>What is the predominant religion in Kazakhstan?</h5>
+              <input type="radio" name="question8" value="A"> Islam<br>
+              <input type="radio" name="question8" value="B"> Christianity<br>
+              <input type="radio" name="question8" value="C"> Buddhism<br>
+            </li><br>
+            <li>
+              <h5>Which festival celebrates the coming of spring in Kazakh culture?</h5>
+              <input type="radio" name="question9" value="A"> Nauryz<br>
+              <input type="radio" name="question9" value="B"> Kurban Ait<br>
+              <input type="radio" name="question9" value="C"> Shalqar Ait<br>
+            </li><br>
+            <li>
+              <h5>What animal is a symbol of Kazakh identity and pride?</h5>
+              <input type="radio" name="question10" value="A"> Snow Leopard<br>
+              <input type="radio" name="question10" value="B"> Eagle<br>
+              <input type="radio" name="question10" value="C"> Saiga Antelope<br>
+            </li>
+            <!-- Other quiz questions go here with a similar structure -->
+          </ol> <br>
+          <input type="submit" class="hero-btn red-btn" value="Submit">
+        </form>
+        <p id="result"></p>
+    </section>
+      <script src="script2.js"></script>
+
+    <!--------contact us--------->
+    <section class="location">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194947.2023244293!2d71.39324020149786!3d51.16052269524095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41704b4d07fd8247%3A0x93b6ef4c974c487b!2sNur-Sultan%2C%20Kazakhstan!5e0!3m2!1sen!2sge!4v1671205205869!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa-solid fa-house"></i>
+            <span>
+            <h5>Mangilik El, C1</h5>
+            <p>Astana, Kazakhstan</p>
+          </span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <span>
+            <h5>+7 702 400 5622</h5>
+            <p>Monday to Saturday, 10AM to 7PM</p>
+          </span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <span>
+            <h5>aminarkht@gmail.com</h5>
+            <p>Email us </p>
+          </span>
+          </div>
+
+        </div>
+
+        <div class="contact-col">
+          <form action="form-handler.php" method = "post">
+            <input type="text" name="name" placeholder="Enter Your Name" required>
+            <input type="email" name="email" placeholder="Enter Email" required>
+            <input type="text" name="subject" placeholder="Enter Your Subject" required>
+            <textarea rows="8" name="message" placeholder="Message" required></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>At Kazakh Heritage Hub, we're devoted to unraveling the rich tapestry of Kazakh culture and history. <br>
+        Our platform serves as a digital sanctuary, where the vibrant heritage of Kazakhstan comes
+        alive through engaging narratives, immersive experiences, and authentic insights.</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>Made With <i class="fa-solid fa-heart"></i> by Amina </p>
+    </section>
+
+    <script src="script2.js"></script>
+  </body>
+</html>
